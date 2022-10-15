@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container py-4">
+    <div class="row">
+        <div class="col">
+            <h1>Product List</h1>
+        </div>
+    </div>
+  <div class="row row-cols-4 g-3">
+    {% for product in products %}
+    <div class="col">
+        <div class="card">
+            <img src="{{product.image.url}}" height="250px" class="card-img-top" alt="">
+            <div class="card-body">
+                <h4 class="card-title">{{product.name}}</h4>
+                <p class="card-text">{{product.description|truncatewords:15}}</p>
+                <p class="card-text">INR {{product.price}}</p>
+                <a class="btn btn-primary" href="{% url 'product:product_update' product.id %}">Update</a>
+                <a class="btn btn-danger" href="{% url 'product:product_delete' product.id %}">Delete</a>
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <div class="col">
+        <h4>Nothing Found!</h4>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

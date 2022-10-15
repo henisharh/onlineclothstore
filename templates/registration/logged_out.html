@@ -1,0 +1,20 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container py-4">
+    <div class="row">
+      <div class="col-lg-6">
+        <h1>Logout</h1>
+        <div class="col-lg-6">
+           {% if user is authenticated %}
+            <a  href="{% url 'logout' % }">logout</a>
+            {{user}}
+                <form action="" method="post">
+                  {% csrf_token %} {{form.as_p}}
+                  <button class="btn btn-primary">Logout</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+
+        {% endblock %}

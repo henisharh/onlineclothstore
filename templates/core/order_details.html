@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="card mt-50 mb-50">
+    <div class="col d-flex"><span class="text-muted" id="orderno">order #546924</span></div>
+    <div class="gap">
+        <div class="col-2 d-flex mx-auto"> </div>
+    </div>
+    <div class="title mx-auto"> Thank you for your order! </div>
+    <div class="main"> <span id="sub-title">
+            <p><b>Order Details</b></p>
+        </span>
+        <div class="row row-main">
+            <div class="col-3"> <img class="img-fluid" src="{% static 'img/culotte.jpg' %} "> </div>
+            <div class="col-6">
+                <div class="row d-flex">
+                    <p><b>Culotte</b></p>
+                </div>
+                <div class="row d-flex">
+                    <p class="text-muted"> White</p>
+                </div>
+            </div>
+            <div class="col-3 d-flex justify-content-end">
+                <p><b>599</b></p>
+            </div>
+        </div>
+        <div class="row row-main">
+            <div class="col-3"> <img class="img-fluid" src="{% static 'img/jackets.jpg' %} "> </div>
+            <div class="col-6">
+                <div class="row d-flex">
+                    <p><b>jackets</b></p>
+                </div>
+                <div class="row d-flex">
+                    <p class="text-muted">with tshirt</p>
+                </div>
+            </div>
+            <div class="col-3 d-flex justify-content-end">
+                <p><b>1199</b></p>
+            </div>
+        </div>
+        <div class="row row-main">
+            <div class="col-3 "> <img class="img-fluid" src="{% static 'img/leghanga.jpg' %} "> </div>
+            <div class="col-6">
+                <div class="row d-flex">
+                    <p><b>leghanga</b></p>
+                </div>
+                <div class="row d-flex">
+                    <p class="text-muted">with dupatta</p>
+                </div>
+            </div>
+            <div class="col-3 d-flex justify-content-end">
+                <p><b>4000</b></p>
+            </div>
+        </div>
+        <hr>
+        <div class="total">
+            <div class="row">
+                <div class="col"> <b> Total:</b> </div>
+                <div class="col d-flex justify-content-end"> <b>5798</b> </div>
+            </div> <button class="btn d-flex mx-auto"> Track your order </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+{% endblock %}

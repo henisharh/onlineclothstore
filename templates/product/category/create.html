@@ -1,0 +1,33 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container py-4">
+  <div class="row">
+    <div class="col-lg-6">
+      <h1>Productcategory Create</h1>
+      
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius eveniet
+        magni maxime voluptatem voluptas dolorem quod odit dignissimos. Autem
+        nihil excepturi est voluptatibus, facilis ipsam recusandae blanditiis
+        facere dolores velit.
+      </p>
+    </div>
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-body">
+          <form action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %} {{form.as_p}}
+            <button class="btn btn-primary">Create</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'base.html' %} {% block content %}
+<section class="container">
+  <form>
+    <i class="fas fs-search"></i>
+    <input type = "text" name="" id="search-item" placeholder="search products" onkeyup="search()">
+    
+  </form>
+  <div class = "product-list" id="product-list">
+    <div class="product">
+        <img src="{% static 'img/jackets.jpg' %}" alt="">
+        <div class="p-details">
+            <h2>jackets for everone</h2>
+            <h3>500</h3>
+            
+
+        </div>
+    </div>
+    <div class="product">
+        <img src="{% static 'img/froks.jpg' %}" alt="">
+        <div class="p-details">
+            <h2>froks</h2>
+            <h3>900</h3>
+        </div>
+    </div>
+    <div class="product">
+        <img src="{% static 'img/jumpsuits.jpg' %}" alt="">
+        <div class="p-details">
+            <h2>jumpsuits fashion</h2>
+            <h3>900</h3>
+        </div>
+    </div>
+    <div class="product">
+        <img src="{% static 'img/leghanga.jpg' %}" alt="">
+        <div class="p-details">
+            <h2>leghanga with dupattas</h2>
+            <h3>3000</h3>
+        </div>
+    </div>
+
+
+
+  </div>
+
+</section>
+
+
+{% endblock %}

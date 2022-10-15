@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link
+      rel="stylesheet"
+      href="{% static 'bootstrap-5.2.1-dist/css/bootstrap.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+      
+    <title>cloth online store with payment | {{page_title}}</title>
+</head>
+    <body>
+
+        {% include "includes/navbar.html" %}
+        {% block content %}{% endblock %}
+        {% include "includes/footer.html" %}
+
+        <!-- scripts -->
+        <script src="{% static 'bootstrap-5.2.1-dist/js/bootstrap.bundle.js' %}"></script>
+        <script src="{% static 'js/scripts.js' %}"></script>
+      </body>
+    
+    </body>
+</html>
