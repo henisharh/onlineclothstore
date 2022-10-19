@@ -92,7 +92,7 @@ class ProductCreateView(views.View):
     template_name = "product/create.html"
     model = models.ProductModel
     success_url = reverse_lazy("product:product_list")
-    form_class = forms.ProductForm
+    # form_class = forms.ProductForm
 
     def get(self,request):
 
@@ -115,7 +115,7 @@ class ProductUpdateView(views.View):
     template_name = "product/Update.html"
     model = models.ProductModel
     success_url = reverse_lazy("product:product_list")
-    form_class = forms.ProductForm
+    # form_class = forms.ProductForm
 
     def get(self,request,pk):
         product = models.ProductModel.objects.get(id=pk)

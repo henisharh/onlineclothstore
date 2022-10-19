@@ -1,7 +1,7 @@
 {% load static %}
 <!----navbar starts--->
 
-<nav class="navbar navbar-expand-lg bg-light">
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href=""> Online Cloth Store </a>
     <button
@@ -23,14 +23,14 @@
         </li>
         <li class="nav-item">
           
-          <a class="nav-link" href="{% url 'core:product_by_category' category='boys' %}"">Boys</a>
+          <a class="nav-link" href="{% url 'core:product_by_category' category='boys' %}">Boys</a>
         </li>
         <li class="nav-item">
           
-          <a class="nav-link" href="{% url 'core:product_by_category' category='girls' %}"">Girls</a>
+          <a class="nav-link" href="{% url 'core:product_by_category' category='girls' %}">Girls</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'core:product_by_category' category='womens' %}"">Women</a>
+          <a class="nav-link" href="{% url 'core:product_by_category' category='womens' %}">Women</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{% url 'core:product_by_category' category='mens' %}">Men</a>
@@ -66,6 +66,7 @@
             <button class="btn btn-outline-success" type="submit">
               Search
             </button>
+            
           </form>
         </li>
       </ul>

@@ -135,6 +135,7 @@ MEDIA_ROOT = BASE_DIR / "media"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
+AUTH_USER_MODEL = "core.User"
 
 LOGIN_URL = "login"
 LOGOUT_URL = "core:home"
@@ -151,6 +152,6 @@ EMAIL_USE_TLS = True
 
 
 
-RAZOR_KEY_ID='rzp_test_v8Rx8b59AU32Wn'
-RAZOR_KEY_SECRET='2ru4NS1xk8SC06M4uBnk2NOE'
+RAZORPAY_KEY_ID='rzp_test_v8Rx8b59AU32Wn'
+RAZORPAY_KEY_SECRET='2ru4NS1xk8SC06M4uBnk2NOE'
 

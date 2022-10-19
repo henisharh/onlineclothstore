@@ -45,20 +45,21 @@ class ProductCategoryModel(models.Model):
 
 
 class ProductModel(models.Model):
-    name = models.CharField(max_length=120)
-    description = models.TextField(max_length=500)
-    price = models.FloatField()
-    image = models.ImageField(upload_to="product/image/", default="default/product.jpg")
-    category = models.ForeignKey(
-        "ProductCategoryModel", on_delete=models.SET_NULL, null=True
-    )
-    unit = models.ForeignKey("ProductUnitModel", on_delete=models.SET_NULL, null=True)
-    size = models.ForeignKey("ProductSizeModel", on_delete=models.SET_NULL, null=True)
-    brand = models.ForeignKey("ProductBrandModel", on_delete=models.SET_NULL, null=True)
-    user = models.ForeignKey(USER, on_delete=models.SET_NULL, null=True, blank=True)
-    status = models.BooleanField(default=True)
-    created_on = models.DateTimeField(auto_now_add=True)
-    updated_on = models.DateTimeField(auto_now=True)
+    pass
+#     name = models.CharField(max_length=120)
+#     description = models.TextField(max_length=500)
+#     price = models.FloatField()
+#     image = models.ImageField(upload_to="product/image/", default="default/product.jpg")
+#     category = models.ForeignKey(
+#         "ProductCategoryModel", on_delete=models.SET_NULL, null=True
+#     )
+#     unit = models.ForeignKey("ProductUnitModel", on_delete=models.SET_NULL, null=True)
+#     size = models.ForeignKey("ProductSizeModel", on_delete=models.SET_NULL, null=True)
+#     brand = models.ForeignKey("ProductBrandModel", on_delete=models.SET_NULL, null=True)
+#     user = models.ForeignKey(USER, on_delete=models.SET_NULL, null=True, blank=True)
+#     status = models.BooleanField(default=True)
+#     created_on = models.DateTimeField(auto_now_add=True)
+#     updated_on = models.DateTimeField(auto_now=True)
 
-    def __str__(self):
-        return self.name
+#     def __str__(self):
+#         return self.name

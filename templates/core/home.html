@@ -71,6 +71,7 @@
       </div>
     </div>
     <div class="row row-cols-4 g-3">
+      
       {% for product in products %}
       <div class="col">
         <div class="card">
@@ -86,7 +87,7 @@
             <p class="card-text">INR {{product.price}}</p>
             <a
               class="btn btn-primary"
-              href="#"
+              href="{% url 'core:cart' %}"
               >Add to cart</a
             >
            
